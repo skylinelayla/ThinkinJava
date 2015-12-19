@@ -4,25 +4,25 @@
 public class PassingThis {
 
     public static void main(String[] args) {
-        new Person().eat(new Apple());
+        new Person().eat(new Apple1());
 
     }
 }
 class Person{
-    public void eat(Apple apple) {
-        Apple peeled = apple.getPeeled();
+    public void eat(Apple1 apple) {
+        Apple1 peeled = apple.getPeeled();
 
         System.out.println("YUMMY");
     }
 }
 
 class Peeler{
-    static Apple peel(Apple apple) {
+    static Apple1 peel(Apple1 apple) {
         return apple;
     }
 }
-class Apple{
-    Apple getPeeled() {
+class Apple1{
+    Apple1 getPeeled() {
         return Peeler.peel(this);
     }
 }
