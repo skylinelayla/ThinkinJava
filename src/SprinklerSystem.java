@@ -1,9 +1,9 @@
-/**
+/**组合，只需将对象的引用置于新类中。
  * Created by ShiKun on 2015/12/16.
  */
 public class SprinklerSystem {
     private String valve1,valve2,valve3,valve4;
-    private Watersource source = new Watersource();
+    private Watersource source = new Watersource();//组合实现。即创建一个对象在此。
     private int i;
     private float f;
 
@@ -34,5 +34,5 @@ class Watersource{
 
     public String toString() {
         return s;
-    }
+    }//该方法可以将对象转换成字符串，重写该方法。
 }
