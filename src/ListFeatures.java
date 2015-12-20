@@ -9,7 +9,7 @@ import static net.mindview.util.Print.*;
 public class ListFeatures {
     public static void main(String[] args) {
         Random rand = new Random(47);
-        List<Pet> pets=
+     //   List<Pet> pets=
     }
 
 
