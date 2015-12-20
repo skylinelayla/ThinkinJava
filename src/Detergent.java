@@ -58,8 +58,8 @@ class Cleanser{
         x.dilute();
         x.scrub();
         print(x);
-
     }
+
 }
 
 class newDetergent extends Detergent{
