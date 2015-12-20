@@ -1,5 +1,5 @@
 import static net.mindview.util.Print.*;
-/**
+/**继承==子类会集成到基类所有的方法和
  * Created by ShiKun on 2015/12/17.
  */
 public class Detergent extends Cleanser {
