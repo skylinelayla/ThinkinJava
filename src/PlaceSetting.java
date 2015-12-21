@@ -3,7 +3,7 @@ import java.util.UnknownFormatConversionException;
 
 import static net.mindview.util.Print.*;
 
-/**
+/**构造类的初始化调用
  * Created by ShiKun on 2015/12/21.
  */
 public class PlaceSetting extends Custom {
