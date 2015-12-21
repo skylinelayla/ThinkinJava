@@ -1,34 +1,22 @@
-/**java代理 将一个成员对象至于要构造的类中，就像组合，
- * 然后在新类中暴露了该成员对象的所有方法。
- * Created by ShiKun on 2015/12/17.
+/**代理的实现,我觉得相当于组合，只不过将对象实现方式是私有的成员变量
+ * 可以不将父类中的方法完全暴露出来，这样也可以实现继承。
+ * Created by ShiKun on 2015/12/21.
  */
 public class SpaceShipDelegation {
     private String name;
-    private SpaceShipControls controls = new SpaceShipControls();//初始化代理类
+    private SpaceShipContols contols = new SpaceShipContols();
 
     public SpaceShipDelegation(String name) {
         this.name = name;
     }
 
-    public void back(int velocity) {//代理的方法
-        controls.back(velocity);
+    public void back(int velocity) {
+        contols.back(velocity);
 
     }
 
     public static void main(String[] args) {
-        SpaceShipDelegation protector = new SpaceShipDelegation("NSEA Protector");
+        SpaceShipDelegation protector = new SpaceShipDelegation("Nsea Protector");
         protector.back(100);
-
     }
 }
-
-class SpaceShipControls{
-    void up(int velocity){};
-    void down(int velocity){};
-    void left(int velocity){};
-    void right(int velocity){};
-    void forward(int velocity){};
-    void back(int velocity){};
-    void tuborBoost(int velocity){};
-}
-
