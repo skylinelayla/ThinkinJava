@@ -18,7 +18,7 @@ class Game {
     Game(int i) {
         print("Game Construnctor");
 
-    }
+    }//基类中有带参数的构造器
 }
 
 class BoardGame extends Game{
@@ -26,6 +26,7 @@ class BoardGame extends Game{
         super(i);
         print("BoardGame constroctor");
 
-    }
+    }//子类中必须有带参数的构造器，
 
 }
+
