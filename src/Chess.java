@@ -1,5 +1,5 @@
 import static net.mindview.util.Print.*;
-/**基类会先初始化，然后子类
+/**基类会先初始化，然后子类，带参数构造器的调用。
  * Created by ShiKun on 2015/12/17.
  */
 public class Chess extends BoardGame {
