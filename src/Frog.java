@@ -3,17 +3,22 @@
  */
 public class Frog extends Amphibian {
     public void set(Frog ax) {
-        System.out.print("hi");
+        System.out.println("hi");
 
     }
     public static void main(String[] args) {
         Frog fg = new Frog();
         fg.set(fg);
+        fg.qq(fg);
 
     }
 }
 class Amphibian{
     public void set(Amphibian ax) {
+        System.out.println("hi");
+    }
+
+    public void qq(Amphibian ax) {
         System.out.println("hi");
     }
 }
