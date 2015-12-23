@@ -11,7 +11,8 @@ public class Music {
 
     public static void main(String[] args) {
         Wind flute = new Wind();
-        tune(flute);
+        tune(flute);//向上转型
+
 
     }
 }
