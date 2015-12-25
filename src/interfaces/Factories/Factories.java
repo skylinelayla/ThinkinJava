@@ -12,7 +12,7 @@ public class Factories {
     }
     public static void main(String[] args) {
         serviceConsumer(new Implementation2Factory());
-        serviceConsumer(new Implementation1());
+        //serviceConsumer(new Implementation1());
 
     }
 }
