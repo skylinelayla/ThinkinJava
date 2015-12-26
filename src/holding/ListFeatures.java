@@ -68,5 +68,6 @@ public class ListFeatures {
         print("22:" + obj[3]);
         Pet[] pa = pets.toArray(new Pet[0]);
         print("23:" + pa[3].id());
+
     }
 }
