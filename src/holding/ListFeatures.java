@@ -1,15 +1,18 @@
 package holding;
 
 
+import pets.*;
 import shape.RandomShapeGenerator;
 
 import typeinfo.pets.*;
+import typeinfo.pets.Cymric;
+import typeinfo.pets.Hamster;
+import typeinfo.pets.Mouse;
+import typeinfo.pets.Pet;
+
 import static net.mindview.util.Print.*;
 
-import java.util.Collection;
-import java.util.Collections;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 
 /**List类的使用
  * Created by ShiKun on 2015/12/25.
@@ -41,7 +44,29 @@ public class ListFeatures {
         print("11:" + pets.containsAll(sub));
         Collections.shuffle(sub, random);//乱序
         print("shuffle subList:" + sub);
-
-
+        print("12:" + pets.containsAll(sub));//该方法是判断列表中是否有该子列表
+        sub = Arrays.asList(pets.get(1), pets.get(4));//取元素加入sub中
+        print("sub" + sub);
+        List<Pet> copy = new ArrayList<>(pets);
+        copy.retainAll(sub);//取交集操作
+        print("13:" + copy);
+        copy = new ArrayList<Pet>(pets);
+        copy.remove(2);
+        print("14:" + copy);
+        copy.removeAll(sub);
+        print("15" + copy);
+        copy.set(1, new Mouse());
+        print("16:" + copy);
+        copy.addAll(2, sub);//对集合插入
+        print("17:" + copy);
+        print("18:" + pets.isEmpty());
+        pets.clear();
+        print("19:" + pets.isEmpty());
+        pets.addAll(Pets.arrayList(4));
+        print("20:" + pets);
+        Object[] obj = pets.toArray();//将对象转换成数组，
+        print("22:" + obj[3]);
+        Pet[] pa = pets.toArray(new Pet[0]);
+        print("23:" + pa[3].id());
     }
 }
