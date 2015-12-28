@@ -23,5 +23,7 @@ public class PriorityQueueDemo {
         priorityQueue = new PriorityQueue<>(ints);//最小的值拥有更高的优先级
         QueueDemo.printQ(priorityQueue);
 
+
+
     }
 }
