@@ -20,7 +20,7 @@ public class PriorityQueueDemo {
         QueueDemo.printQ(priorityQueue);
 
         List<Integer> ints = Arrays.asList(25, 22, 20, 28, 14, 9, 3, 1, 1, 2, 3, 9, 14, 18, 21, 23, 25);
-        priorityQueue = new PriorityQueue<>(ints);
+        priorityQueue = new PriorityQueue<>(ints);//最小的值拥有更高的优先级
         QueueDemo.printQ(priorityQueue);
 
     }
