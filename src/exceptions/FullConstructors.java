@@ -1,10 +1,10 @@
 package exceptions;
 
-/**
+/**自定义异常，接受带参数的异常构造器
  * Created by ShiKun on 2015/12/28.
  */
 public class FullConstructors {
-    public static void f() throws MyException{
+    public static void f() throws MyException{//该方法可能会抛出异常，抛出异常的类型
         System.out.println("Throws myException from f()");
         throw new MyException();
     }
@@ -35,7 +35,7 @@ class MyException extends Exception{
     public MyException() {
 
     }
-    public MyException(String msg) {
+   public MyException(String msg) {
         super(msg);
     }
 
